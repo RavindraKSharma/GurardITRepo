@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        flatDir {
+            dirs "libs"
+        }
+    }
+
+    dependencies {
+        classpath ':guardit4j-finalize:'
+    }
+}
+
+apply plugin: 'com.android.application'
+apply from: 'extractFinFiles.gradle'
+
+repositories {
+    flatDir {
+        dirs "libs"
+    }
+}
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.example.simplesimon"
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation name: 'cookiebar2-debug', ext: 'aar'
+}
+
+apply plugin: 'guardit4j-finalize'

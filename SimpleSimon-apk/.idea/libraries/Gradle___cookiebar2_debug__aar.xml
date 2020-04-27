@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: :cookiebar2-debug:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1070527e215ef89638309a10098cb02e/cookiebar2-debug/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1070527e215ef89638309a10098cb02e/cookiebar2-debug/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

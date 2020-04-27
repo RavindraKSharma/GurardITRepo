@@ -1,0 +1,34 @@
+def extractFinFile(zip, variant, destFileName) {
+    copy {
+        from zip.matching { include 'guardit4j.fin' }
+        into "${buildDir}/outputs/fin/${variant.name}"
+        rename { filename ->
+            filename.replace 'guardit4j', "${destFileName}"
+        }
+    }
+}
+
+def extractFinFiles() {
+    android.applicationVariants.each { variant ->
+        def files = variant.compileConfiguration.files
+        files.each { file ->
+            if (file.name.endsWith(".aar")) {
+                def aarZip = zipTree(file)
+                extractFinFile(aarZip, variant, file.name.substring(0, file.name.lastIndexOf('.')))
+                def classesJarAarEntry = aarZip.matching { include 'classes.jar' }.singleFile
+                if (classesJarAarEntry) {
+                    def classesJarZip = zipTree(classesJarAarEntry)
+                    extractFinFile(classesJarZip, variant, file.name.substring(0, file.name.lastIndexOf('.')))
+                }
+            }
+        }
+    }
+}
+
+project.afterEvaluate {
+    extractFinFiles()
+}
+
+clean.doLast {
+    extractFinFiles()
+}
