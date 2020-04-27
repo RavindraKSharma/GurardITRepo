@@ -1,0 +1,116 @@
++--- androidx.appcompat:appcompat:1.0.2
+|    +--- androidx.annotation:annotation:1.0.0
+|    +--- androidx.core:core:1.0.1
+|    |    +--- androidx.annotation:annotation:1.0.0
+|    |    +--- androidx.collection:collection:1.0.0
+|    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    +--- androidx.lifecycle:lifecycle-runtime:2.0.0
+|    |    |    +--- androidx.lifecycle:lifecycle-common:2.0.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    |    +--- androidx.arch.core:core-common:2.0.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    \--- androidx.versionedparcelable:versionedparcelable:1.0.0
+|    |         +--- androidx.annotation:annotation:1.0.0
+|    |         \--- androidx.collection:collection:1.0.0 (*)
+|    +--- androidx.collection:collection:1.0.0 (*)
+|    +--- androidx.cursoradapter:cursoradapter:1.0.0
+|    |    \--- androidx.annotation:annotation:1.0.0
+|    +--- androidx.legacy:legacy-support-core-utils:1.0.0
+|    |    +--- androidx.annotation:annotation:1.0.0
+|    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    +--- androidx.documentfile:documentfile:1.0.0
+|    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    +--- androidx.loader:loader:1.0.0
+|    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    +--- androidx.lifecycle:lifecycle-livedata:2.0.0
+|    |    |    |    +--- androidx.arch.core:core-runtime:2.0.0
+|    |    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    |    \--- androidx.arch.core:core-common:2.0.0 (*)
+|    |    |    |    +--- androidx.lifecycle:lifecycle-livedata-core:2.0.0
+|    |    |    |    |    +--- androidx.lifecycle:lifecycle-common:2.0.0 (*)
+|    |    |    |    |    +--- androidx.arch.core:core-common:2.0.0 (*)
+|    |    |    |    |    \--- androidx.arch.core:core-runtime:2.0.0 (*)
+|    |    |    |    \--- androidx.arch.core:core-common:2.0.0 (*)
+|    |    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.0.0
+|    |    |         \--- androidx.annotation:annotation:1.0.0
+|    |    +--- androidx.localbroadcastmanager:localbroadcastmanager:1.0.0
+|    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    \--- androidx.print:print:1.0.0
+|    |         \--- androidx.annotation:annotation:1.0.0
+|    +--- androidx.fragment:fragment:1.0.0
+|    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    +--- androidx.legacy:legacy-support-core-ui:1.0.0
+|    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |    |    +--- androidx.customview:customview:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    \--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    +--- androidx.viewpager:viewpager:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    |    \--- androidx.customview:customview:1.0.0 (*)
+|    |    |    +--- androidx.coordinatorlayout:coordinatorlayout:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    |    \--- androidx.customview:customview:1.0.0 (*)
+|    |    |    +--- androidx.drawerlayout:drawerlayout:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    |    \--- androidx.customview:customview:1.0.0 (*)
+|    |    |    +--- androidx.slidingpanelayout:slidingpanelayout:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    |    \--- androidx.customview:customview:1.0.0 (*)
+|    |    |    +--- androidx.interpolator:interpolator:1.0.0
+|    |    |    |    \--- androidx.annotation:annotation:1.0.0
+|    |    |    +--- androidx.swiperefreshlayout:swiperefreshlayout:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    +--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    |    \--- androidx.interpolator:interpolator:1.0.0 (*)
+|    |    |    +--- androidx.asynclayoutinflater:asynclayoutinflater:1.0.0
+|    |    |    |    +--- androidx.annotation:annotation:1.0.0
+|    |    |    |    \--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    |    |    \--- androidx.cursoradapter:cursoradapter:1.0.0 (*)
+|    |    +--- androidx.legacy:legacy-support-core-utils:1.0.0 (*)
+|    |    +--- androidx.annotation:annotation:1.0.0
+|    |    +--- androidx.loader:loader:1.0.0 (*)
+|    |    \--- androidx.lifecycle:lifecycle-viewmodel:2.0.0 (*)
+|    +--- androidx.vectordrawable:vectordrawable:1.0.1
+|    |    +--- androidx.annotation:annotation:1.0.0
+|    |    \--- androidx.core:core:1.0.0 -> 1.0.1 (*)
+|    \--- androidx.vectordrawable:vectordrawable-animated:1.0.0
+|         +--- androidx.vectordrawable:vectordrawable:1.0.0 -> 1.0.1 (*)
+|         \--- androidx.legacy:legacy-support-core-ui:1.0.0 (*)
++--- androidx.appcompat:appcompat:{strictly 1.0.2} -> 1.0.2 (c)
++--- androidx.annotation:annotation:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.core:core:{strictly 1.0.1} -> 1.0.1 (c)
++--- androidx.collection:collection:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.cursoradapter:cursoradapter:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.legacy:legacy-support-core-utils:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.fragment:fragment:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.vectordrawable:vectordrawable:{strictly 1.0.1} -> 1.0.1 (c)
++--- androidx.vectordrawable:vectordrawable-animated:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.lifecycle:lifecycle-runtime:{strictly 2.0.0} -> 2.0.0 (c)
++--- androidx.versionedparcelable:versionedparcelable:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.documentfile:documentfile:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.loader:loader:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.localbroadcastmanager:localbroadcastmanager:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.print:print:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.legacy:legacy-support-core-ui:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.lifecycle:lifecycle-viewmodel:{strictly 2.0.0} -> 2.0.0 (c)
++--- androidx.lifecycle:lifecycle-common:{strictly 2.0.0} -> 2.0.0 (c)
++--- androidx.arch.core:core-common:{strictly 2.0.0} -> 2.0.0 (c)
++--- androidx.lifecycle:lifecycle-livedata:{strictly 2.0.0} -> 2.0.0 (c)
++--- androidx.customview:customview:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.viewpager:viewpager:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.coordinatorlayout:coordinatorlayout:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.drawerlayout:drawerlayout:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.slidingpanelayout:slidingpanelayout:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.interpolator:interpolator:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.swiperefreshlayout:swiperefreshlayout:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.asynclayoutinflater:asynclayoutinflater:{strictly 1.0.0} -> 1.0.0 (c)
++--- androidx.arch.core:core-runtime:{strictly 2.0.0} -> 2.0.0 (c)
+\--- androidx.lifecycle:lifecycle-livedata-core:{strictly 2.0.0} -> 2.0.0 (c)

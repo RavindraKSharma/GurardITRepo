@@ -1,0 +1,2 @@
+GUARD_NAME, CALLING_CLASS, CALLING_METHOD, ALGORITHMS, NOTES
+rootDetection,org.aviran.cookiebar2.CookieBar,invokeRootDetectionGuard,root|rootHidingApps,

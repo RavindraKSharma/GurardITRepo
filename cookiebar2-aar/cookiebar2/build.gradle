@@ -1,0 +1,66 @@
+buildscript {
+    //Add
+    repositories {
+        flatDir {
+            dirs "${guardit4jpath}/lib"
+        }
+    }
+    //Add
+    dependencies {
+        classpath 'com.arxan.gradle:guardit4j:'
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'guardit4j'  //Add
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        unprotected {
+            debuggable true
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+}
+//Add
+guardit4j {
+    buildVariants {
+        debug {
+            guardSpec "guardspec.gsml"
+            logPath "log_debug" //optional
+            requiresFinalization true
+        }
+
+        release {
+            guardSpec "guardspec.gsml"
+            logPath "log_release"
+            requiresFinalization true
+        }
+    }
+}

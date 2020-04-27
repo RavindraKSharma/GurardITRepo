@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<guardspec version="1.1">
+    <target>
+        <!-- LEAVE INPUT AND OUTPUT BLANK, IT WILL BE POPULATED BY G4J -->
+        <pair>
+            <input/>
+            <output/>
+        </pair>
+        <type>library</type>
+        <!--
+            Excluding TamperAction class along with its methods from an API of the library.
+            This is recommended to do as this will make all tamper actions to be more obscure
+        -->
+        <interface applyDefaultFilters="true">
+            <exclude>
+                <class name="org.aviran.cookiebar2.TamperAction" />
+            </exclude>
+        </interface>
+        <androidContext>
+            <class name="org.aviran.cookiebar2.Tools">
+                <method name="getContext" />
+            </class>
+        </androidContext>
+    </target>
+
+    <seed>125</seed>
+
+    <guards>
+        <renaming disable="false"/>
+
+        <debuginfo>strip</debuginfo>
+
+        <controlflow level="2" disable="false"/>
+
+        <stringencryption disable="false"/>
+
+        <callhiding>
+            <hide>
+                <methods>
+                    <class name="org.aviran.cookiebar2.CookieBar" >
+                    </class>
+                </methods>
+                <range>
+                    <class name="org.aviran.cookiebar2.CookieBar" />
+                </range>
+            </hide>
+        </callhiding>
+
+        <dynamicInstrumentationDetection name="dynamicInstrumentationDetection" debug="true" >
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="invokeDynamicInstrumentationDetectionGuard" />
+                </class>
+            </location>
+            <algorithm>
+                <fridaPresence/>
+                <gameGuardian/>
+            </algorithm>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperDynamicInstrumentationDetectionGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperDynamicInstrumentationDetectionGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+        </dynamicInstrumentationDetection>
+
+        <debuggerdetection name="debuggerDetection" debug="true" >
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="invokeDebuggerDetectionGuard" />
+                </class>
+            </location>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperDebuggerDetectionGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperDebuggerDetectionGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+        </debuggerdetection>
+
+        <emulatordetection name="emulatorDetection" debug="true" >
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="invokeEmulatorDetectionGuard" />
+                </class>
+            </location>
+            <detect>
+                <emulator name="qemu" />
+                <emulator name="virtualbox" />
+                <emulator name="bluestack" />
+                <emulator name="koplayer" />
+                <emulator name="andyroid" />
+                <emulator name="noxplayer" />
+                <emulator name="memuplay" />
+                <emulator name="vmware" />
+                <emulator name="droid4x" />
+            </detect>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperEmulatorDetectionGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperEmulatorDetectionGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+        </emulatordetection>
+
+        <hookdetection name="hookDetection" debug="true" >
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="invokeHookDetectionGuard" />
+                </class>
+            </location>
+            <algorithm>
+                <hookInstalled/>
+            </algorithm>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperHookDetectionGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperHookDetectionGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+        </hookdetection>
+
+        <rootdetection name="rootDetection" debug="true" >
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="invokeRootDetectionGuard" />
+                </class>
+            </location>
+            <algorithm>
+                <root/>
+                <rootHidingApps/>
+            </algorithm>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperRootDetectionGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperRootDetectionGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+        </rootdetection>
+
+        <!-- Guards which require finalization -->
+        <checksum name="checksum" debug="true" >
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="build" />
+                </class>
+            </location>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperChecksumGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperChecksumGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+        </checksum>
+
+        <resourceencryption disable="false" decryptInApplication="true" >
+            <range>
+                <path>assets/rhyme.txt</path>
+            </range>
+        </resourceencryption>
+
+        <resourceverification name="resourceVerification" debug="true">
+            <location>
+                <class name="org.aviran.cookiebar2.CookieBar" >
+                    <method name="invokeResourceVerificationGuard" />
+                </class>
+            </location>
+            <action>
+                <tamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="tamperResourceVerificationGuard" />
+                    </class>
+                </tamper>
+                <nonTamper>
+                    <class name="org.aviran.cookiebar2.TamperAction" >
+                        <method name="nonTamperResourceVerificationGuard" />
+                    </class>
+                </nonTamper>
+            </action>
+            <range>
+                <path>assets/rhyme.txt</path>
+            </range>
+        </resourceverification>
+    </guards>
+</guardspec>

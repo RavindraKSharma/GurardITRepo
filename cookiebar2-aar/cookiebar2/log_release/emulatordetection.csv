@@ -1,0 +1,2 @@
+GUARD_NAME, CALLING_CLASS, CALLING_METHOD, ALGORITHMS, NOTES
+emulatorDetection,org.aviran.cookiebar2.CookieBar,invokeEmulatorDetectionGuard,bluestack|virtualbox|droid4x|koplayer|vmware|andyroid|qemu|noxplayer|memuplay,

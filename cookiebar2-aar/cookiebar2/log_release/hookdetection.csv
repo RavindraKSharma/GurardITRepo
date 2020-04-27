@@ -1,0 +1,2 @@
+GUARD_NAME, CALLING_CLASS, CALLING_METHOD, ALGORITHMS, NOTES
+hookDetection,org.aviran.cookiebar2.CookieBar,invokeHookDetectionGuard,hookInstalled,

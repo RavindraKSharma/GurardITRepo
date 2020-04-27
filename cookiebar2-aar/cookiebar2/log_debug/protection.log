@@ -1,0 +1,186 @@
+
+C:\Users\G511062\Verify SDK\Docs\g4j-7.0.0-windows-5e5432c7\examples\java\SimpleSimon\cookiebar2-aar>REM GuardIT 4 Java Invocation Batch File 
+
+C:\Users\G511062\Verify SDK\Docs\g4j-7.0.0-windows-5e5432c7\examples\java\SimpleSimon\cookiebar2-aar>REM Copyright (c) 2011 Arxan Technologies, Inc. 
+Using G4J installation location C:\Users\G511062\Verify SDK\Docs\g4j-7.0.0-windows-5e5432c7
+GuardIT for Java 7.0.0
+Copyright (c) Arxan Technologies, Inc 2001-2020
+
+Date:  04/03/2020
+Build: 5e5432c7
+
+Arxan
+
+JVM Vendor/Version: Oracle Corporation 1.8.0_221
+=== Added 17 protectable class(es) from target C:\Users\G511062\AppData\Local\Temp\groovy-generated-669845194409821389-tmpdir\classes.jar ===
+
+Using Protection Target: Android
+Using Protection Mode: Library
+INJECTING STUB CLASS
+Injecting class: com.arxan.guardit4j.checksum.ZipEntryHash
+Injecting class: com.arxan.guardit4j.crypto.AESCrypto
+Injecting class: com.arxan.guardit4j.crypto.CipherInputStreamWrapper
+Injecting class: com.arxan.guardit4j.util.HexConverter
+Injecting class: com.arxan.iter.ArrayIterator
+Injecting class: com.arxan.util.types.ByteArray
+Injecting class: com.arxan.guardit4j.util.DirectoryEnumerator
+Injecting class: com.arxan.guardit4j.util.PackageNameEnumerator
+Injecting class: com.arxan.guardit4j.util.PackageNameEnumeratorException
+Injecting class: com.arxan.guardit4j.util.StringUtil
+Injecting class: com.arxan.guardit4j.util.BufferedFileByteSearch
+Injecting class: com.arxan.iter.ArrayIterator
+Injecting class: com.arxan.util.types.ByteArray
+Injecting class: com.arxan.guardit4j.util.DirectoryEnumerator
+Injecting class: com.arxan.guardit4j.util.PackageNameEnumerator
+Injecting class: com.arxan.guardit4j.hookdetection.ClasspathEnumerator
+Injecting class: com.arxan.guardit4j.hookdetection.HookedMethodEnumerator
+Injecting class: com.arxan.guardit4j.hookdetection.ProcMapsEnumerator
+Injecting class: com.arxan.iter.ArrayIterator
+Injecting class: com.arxan.util.types.ByteArray
+Injecting class: com.arxan.guardit4j.rootdetection.MagiskDaemonConnector
+Injecting class: com.arxan.guardit4j.rootdetection.MagiskDaemonConnector$Command
+Injecting class: com.arxan.guardit4j.util.PackageEnumerator
+Injecting class: com.arxan.guardit4j.util.DirectoryEnumerator
+Injecting class: com.arxan.guardit4j.util.PackageEnumeratorException
+Injecting class: com.arxan.guardit4j.util.StringUtil
+Injecting class: com.arxan.guardit4j.util.UnixSocketEnumerator
+Injecting class: com.arxan.guardit4j.util.elfparser.ELFParser_GRD1__dynamicInstrumentationDetection
+Injecting class: com.arxan.guardit4j.util.elfparser.SymbolTable_GRD2__dynamicInstrumentationDetection
+Injecting class: com.arxan.guardit4j.util.elfparser.StringTable_GRD3__dynamicInstrumentationDetection
+Injecting class: com.arxan.util.FileUtils_GRD4__dynamicInstrumentationDetection
+Injecting class: com.arxan.guardit4j.dynamicinstrumentationdetection.DIDetectionDebug_GRD0__dynamicInstrumentationDetection
+Injecting class: com.arxan.guardit4j.debuggerdetection.DDAndroidIsDebuggerConnected1Debug_GRD5__debuggerDetection
+Injecting class: com.arxan.guardit4j.emulatordetection.EmulatorDetectDebug_GRD6__emulatorDetection
+Injecting class: com.arxan.guardit4j.hookdetection.HookDetectDebug_GRD7__hookDetection
+Injecting class: com.arxan.guardit4j.rootdetection.RootDetectDebug_GRD8__rootDetection
+Injecting class: com.arxan.guardit4j.checksum.ChecksumDebug_GRD9__checksum
+Injecting class: com.arxan.guardit4j.resourceverification.CheckResourceDebug_GRDa__resourceVerification
+=== Applying Android Resource Encryption Guard ===
+--> Guarding user resources at paths 
+	resource --> assets/rhyme.txt (CRC32 value = 4113805607)
+=== Applied Android Resource Encryption Guard to 1 resources ===
+
+=== Applied Android Dynamic Instrumentation Detection Guard ===
+
+=== Applied Android Hook Detection Guard ===
+
+=== Applied Android Root Detection Guard ===
+
+=== Applied Android Checksum Guard ===
+
+=== Applying Android Resource Verification Guard ===
+--> Guarding user resources at paths 
+	resource --> assets/rhyme.txt (CRC32 value = 4113805607)
+Search paths used for finding system and user class files:
+	bootclasspath='[C:\Program Files\Java\jre1.8.0_221\lib\resources.jar, C:\Program Files\Java\jre1.8.0_221\lib\rt.jar, C:\Program Files\Java\jre1.8.0_221\lib\sunrsasign.jar, C:\Program Files\Java\jre1.8.0_221\lib\jsse.jar, C:\Program Files\Java\jre1.8.0_221\lib\jce.jar, C:\Program Files\Java\jre1.8.0_221\lib\charsets.jar, C:\Program Files\Java\jre1.8.0_221\lib\jfr.jar, C:\Program Files\Java\jre1.8.0_221\classes]'
+
+	extdirs='[C:\Program Files\Java\jre1.8.0_221\lib\ext, C:\WINDOWS\Sun\Java\lib\ext]'
+
+	classpath='[C:\Users\G511062\Verify SDK\Docs\g4j-7.0.0-windows-5e5432c7\lib/guardit4j.jar, C:\Users\G511062\Verify SDK\Docs\g4j-7.0.0-windows-5e5432c7\lib/arxanagent.jar]'
+=== Applied String Encryption Guard to 31 classes ===
+
+=== Applying Control Flow Obfuscation Guard ===
+=== Applied Control Flow Obfuscation Guard to 69 classes ===
+
+=== Applying Renaming Guard ===
+=== Applied Renaming Guard to 76 classes  ===
+
+=== Beginning Call Hiding Guard Installation ===
+=== Completed Call Hiding Guard Installation of 243 clauses in 81 classes ===
+
+Added stub ref to class 'bbwvkrebmokhxae/ggglll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/gglgll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ggllgl.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/glggll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/glglll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/gllgll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/glllgl.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/glllll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/lgggll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/lgglll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/lglgll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/lgllgl.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/llggll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/llglll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/lllgll.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/llllgl.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuuuuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufuuuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffuuuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uufuuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uffuuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fffuuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuufuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuufuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufufuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffufuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuffuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuffuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufffuu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuuufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuuufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufuufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uufufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fufufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uffufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fffufu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuuffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuuffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufuffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffuffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uufffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fufffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uffffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fffffu.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuuuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuuuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufuuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffuuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uufuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fufuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uffuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fffuuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuufuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuufuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufufuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffufuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuffuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuffuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufffuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffffuf.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffffuf$uuuuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuuuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufuuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffuuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uufuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fufuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uffuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fffuff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuufff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuufff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufufff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ffufff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/uuffff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/fuffff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/ufffff.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/djjjjj.class' method '<clinit>'
+Added stub ref to class 'bbwvkrebmokhxae/jdjjjj.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/BuildConfig.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/Cookie.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/Cookie$1.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/Cookie$2.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/Cookie$3.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/CookieBar.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/CookieBar$1.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/CookieBar$Builder.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/CookieBar$dddjjj.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/jjjdjj.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/djjdjj.class' method '<clinit>'
+Added stub ref to class 'org/aviran/cookiebar2/Tools.class' method '<clinit>'
+=== Stripping Debug Info from class files ===
+=== Completed stripping Debug Info from 101 class files ===
+
+serializeStubForFinalizer invoked
+injected stub class name is bbwvkrebmokhxae/nppppp
+Wrote 106 files to JAR file 'C:\Users\G511062\AppData\Local\Temp\groovy-generated-669845194409821389-tmpdir\classes-protected.jar'
+Protection completed.
